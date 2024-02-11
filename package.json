@@ -1,0 +1,19 @@
+{
+  "name": "auth-to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "if-env NODE_ENV=production && npm run start:frontend:prod || npm run start:frontend:dev",
+    "start:backend": "if-env NODE_ENV=production && npm run start:backend:prod || npm run start:backend:dev",
+    "start:frontend:prod": "cd frontend && npm start",
+    "start:frontend:dev": "cd frontend && npm run dev",
+    "start:backend:prod": "cd backend && npm start",
+    "start:backend:dev": "cd backend && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
